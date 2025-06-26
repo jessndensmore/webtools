@@ -1,1 +1,2 @@
 This project will allow me to learn the basics of creating a web page with HTML code. It will go through many changes as I learn more and more. 
+Some of the changes that have been made to this project include adding content to the Home page and basic page tags and semantic structure tags. I have also added a navigation bar and About Us and Contact Us pages. I have also added hyperlinks. Styling and formatting were added by using an CSS style sheet.
