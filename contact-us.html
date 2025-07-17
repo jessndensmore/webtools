@@ -17,6 +17,46 @@
             </ul>
         </nav>
     </header>
+    <form name="contact" method="get" action="success.html">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="pname">Preferred name:</label><br>
+            <input type="text" id="pname" name="pname">
+        </fieldset>
+        <fieldset>
+            <legend>Rennaisance Information</legend>
+            <p>Have you been to a rennaisance festival in Texas?</p>
+            <input type="radio" id="Yes" name="attendance" value="Yes">
+            <label for="Yes">Yes</label><br>
+            <input type="radio" id="No" name="attendance" value="No">
+            <label for="No">No</label><br>
+            <p>If yes, which festival(s) have attended?</p>
+            <input type="checkbox" id="festival1" name="festival1" value="TRF">
+            <label for="festival1"> Texas Rennaisance Festival</label><br>
+            <input type="checkbox" id="festival2" name="festival2" value="Scar">
+            <label for="festival2"> Scarborough Rennaisance Festival</label><br>
+            <input type="checkbox" id="festival3" name="festival3" value="Sher">
+            <label for="festival3"> Sherwood Forest Faire</label><br>
+            <input type="checkbox" id="festival4" name="festival4" value="Viking">
+            <label for="festival4"> Texas Viking Festival</label><br>
+            <label for="festivals">Choose your favorite thing about rennaisance festivals:</label>
+            <select name="festivals" id="festivals">
+                <option value="food">Food</option>
+                <option value="shows">Shows</option>
+                <option value="shops">Shops</option>
+                <option value="camping">Camping</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Comments</legend>
+            <textarea id="Comments" name="Comments" rows="4" cols="50"></textarea>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Submit"> <input type="reset" value="Reset">
+        </fieldset>
+    </form>
 <footer>
     <p>Please visit the <a href="https://www.dallascollege.edu/pages/default.aspx">Dallas College</a> website for more information.</p>
     <p>Feel free to <a href="mailto:you@example.com">email me</a>. I love to chat!</p>

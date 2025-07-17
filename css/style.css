@@ -51,6 +51,33 @@ main {
     text-align: center;
 }
 
+/*success.html*/
+
+#success {
+    text-align: center;
+}
+
+/*about-us.html*/
+
+#about table, th, td {
+    width: 60vw;
+    padding: 10px;
+    border: 1px solid rgb(172, 102, 5);
+    text-align: left;
+    margin: auto;
+    border-spacing: 2px;
+}
+
+#about p {
+    text-align: center;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+/*Images*/
+
 img[alt="Girl with a Dragon"] {
     max-width: 250px;
     max-height: 68px;
@@ -85,4 +112,12 @@ img[alt="Texas Flag"] {
     hover {
     box-shadow: 0 0 1px 1px rgba(0, 140, 186, 0.5);
     }
+}
+
+/*contact-us.html*/
+
+form {
+    margin: auto;
+    text-align: center;
+    width: 65vw;
 }
