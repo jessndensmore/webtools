@@ -10,14 +10,14 @@ nav {
 }
 
 h2 {
-    background-color: rgb(238, 170, 10, 0.893);
+    background-color: rgb(255, 255, 255);
     font-family: "Lucida Handwriting", cursive;
     text-align: left;
     font-size: 18px;
 }
 
 body {
-    background-color: rgb(246, 241, 106);
+    background-color: rgb(255, 255, 255);
     font-family: "Times New Roman", serif;
     text-align: left;
     font-size: 15px;
@@ -48,7 +48,7 @@ ul.no-bullets {
 }
 
 main {
-    text-align: center;
+    text-align: left;
 }
 
 /*success.html*/
@@ -74,44 +74,6 @@ main {
 
 #about h2 {
     text-align: center;
-}
-
-/*Images*/
-
-img[alt="Girl with a Dragon"] {
-    max-width: 250px;
-    max-height: 70px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    float: left;
-    hover {
-    box-shadow: 0 0 1px 1px rgba(0, 140, 186, 0.5);
-    }
-}
-
-img[alt="Computer with Coding"] {
-    max-width: 200px;
-    max-height: 75px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    float: right;
-    hover {
-    box-shadow: 0 0 1px 1px rgba(0, 140, 186, 0.5);
-    }
-}
-
-img[alt="Texas Flag"] {
-    max-width: 200px;
-    max-height: 80px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    float: right;
-    hover {
-    box-shadow: 0 0 1px 1px rgba(0, 140, 186, 0.5);
-    }
 }
 
 /*contact-us.html*/

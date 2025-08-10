@@ -1,65 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica Densmore Web Page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
+
 <body>
-     <header>
+    <header>
         <h1>Contact Us</h1>
-        <img src="images/logo-yellow.png" alt="Woman with glasses and book on a yellow background">
+        <img src="images/logo-white.png" alt="Woman with glasses and book">
         <nav class="topnav">
             <a class="active" href="index.html">Home</a>
-            <a href="#news">News</a>
             <a href="contact-us.html">Contact</a>
             <a href="about-us.html">About</a>
+            <a href="team.html">Team</a>
         </nav>
     </header>
-    <form name="contact" method="get" action="success.html">
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="pname">Preferred name:</label><br>
-            <input type="text" id="pname" name="pname">
-        </fieldset>
-        <fieldset>
-            <legend>Rennaisance Information</legend>
-            <p>Have you been to a rennaisance festival in Texas?</p>
-            <input type="radio" id="Yes" name="attendance" value="Yes">
-            <label for="Yes">Yes</label><br>
-            <input type="radio" id="No" name="attendance" value="No">
-            <label for="No">No</label><br>
-            <p>If yes, which festival(s) have attended?</p>
-            <input type="checkbox" id="festival1" name="festival1" value="TRF">
-            <label for="festival1"> Texas Rennaisance Festival</label><br>
-            <input type="checkbox" id="festival2" name="festival2" value="Scar">
-            <label for="festival2"> Scarborough Rennaisance Festival</label><br>
-            <input type="checkbox" id="festival3" name="festival3" value="Sher">
-            <label for="festival3"> Sherwood Forest Faire</label><br>
-            <input type="checkbox" id="festival4" name="festival4" value="Viking">
-            <label for="festival4"> Texas Viking Festival</label><br>
-            <label for="festivals">Choose your favorite thing about rennaisance festivals:</label>
-            <select name="festivals" id="festivals">
-                <option value="food">Food</option>
-                <option value="shows">Shows</option>
-                <option value="shops">Shops</option>
-                <option value="camping">Camping</option>
-            </select>
-        </fieldset>
-        <fieldset>
-            <legend>Comments</legend>
-            <textarea id="Comments" name="Comments" rows="4" cols="50"></textarea>
-        </fieldset>
-        <fieldset>
-            <input type="submit" value="Submit"> <input type="reset" value="Reset">
-        </fieldset>
-    </form>
-<footer>
-    <p>Please visit the <a href="https://www.dallascollege.edu/pages/default.aspx">Dallas College</a> website for more information.</p>
-    <p>Feel free to <a href="mailto:you@example.com">email me</a>. I love to chat!</p>
-</footer>
+
+    <main>
+        <form name="contact" method="get" action="success.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="pname">Preferred name:</label><br>
+                <input type="text" id="pname" name="pname">
+            </fieldset>
+            <fieldset>
+                <legend>Rennaisance Information</legend>
+                <p>Have you been to a rennaisance festival in Texas?</p>
+                <input type="radio" id="Yes" name="attendance" value="Yes">
+                <label for="Yes">Yes</label><br>
+                <input type="radio" id="No" name="attendance" value="No">
+                <label for="No">No</label><br>
+                <p>If yes, which festival(s) have attended?</p>
+                <input type="checkbox" id="festival1" name="festival1" value="TRF">
+                <label for="festival1"> Texas Rennaisance Festival</label><br>
+                <input type="checkbox" id="festival2" name="festival2" value="Scar">
+                <label for="festival2"> Scarborough Rennaisance Festival</label><br>
+                <input type="checkbox" id="festival3" name="festival3" value="Sher">
+                <label for="festival3"> Sherwood Forest Faire</label><br>
+                <input type="checkbox" id="festival4" name="festival4" value="Viking">
+                <label for="festival4"> Texas Viking Festival</label><br>
+                <label for="festivals" class="fav-thing">Choose your favorite thing about rennaisance festivals:</label>
+                <select name="festivals" id="festivals">
+                    <option value="food">Food</option>
+                    <option value="shows">Shows</option>
+                    <option value="shops">Shops</option>
+                    <option value="camping">Camping</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Comments</legend>
+                <textarea id="Comments" name="Comments" rows="4" cols="50"></textarea>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Submit"> <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </main>
+     <footer>
+        <footer class="footer">
+            <div class="footer-column"></div>
+            <ul>
+                <p><a href="https://www.dallascollege.edu/pages/default.aspx">Dallas College</a></p>
+                <p><a href="https://chatgpt.com/">ChatGPT</a></p>
+                <p><a href="https://copilot.microsoft.com/chats/k4jRPwGsjz8fM9xic1FMk">Microsoft AI</a></p>
+            </ul>
+            <div class="footer-column"></div>
+            <ul>
+                <p>&copy; 2024</p>
+                <p>Email <a href="mailto:e3869880@student.dcccd.edu">Webmaster</a></p>
+            </ul>
+            <div class="footer-column"></div>
+            <div class="bottomnav">
+                <ul>
+                    <p><a class="active" href="index.html">Home</a></p>
+                    <p><a href="contact-us.html">Contact</a></p>
+                    <p><a href="about-us.html">About</a></p>
+                    <p><a href="team.html">Team</a></p>
+                </ul>
+            </div>
+        </footer>
 </body>
+
 </html>
