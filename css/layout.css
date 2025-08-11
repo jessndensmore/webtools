@@ -61,7 +61,7 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
 
 .lindsey-pic {
@@ -71,6 +71,31 @@
     border-radius: 4px;
     padding: 5px;
     box-sizing: border-box;
+}
+
+.shows {
+    max-width: 500px;
+    max-height: 200px;
+}
+
+.food {
+    max-width: 500px;
+    max-height: 200px;
+}
+
+.shops {
+    max-width: 500px;
+    max-height: 200px;
+}
+
+.food-shows {
+    max-width: 400px;
+    max-height: 200px;
+}
+
+.food-shops {
+    max-width: 400px;
+    max-height: 200px;
 }
 
 /*Navigation*/
@@ -108,4 +133,79 @@ main {
     display: flex;
     flex-basis: 100%;
     gap: 180px;
+}
+
+/*Products Page*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+header {
+    grid-column: 1 / -1;
+    background-color: rgb(238, 170, 10);
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+aside {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+footer {
+    grid-column: 1 / -1;
+    background-color: rgb(238, 170, 10);
+    padding: 20px;
+    text-align: center;
+}
+
+.product-grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+}
+
+.product-grid-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.column-1 {
+    float: left;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgba(238, 170, 10);
+}
+
+.column-2 {
+    float: left;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgba(238, 170, 10);
+}
+
+.column-3 {
+    float: left;
+    width: 33.33%;
+   background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgba(238, 170, 10);
+    gap: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
