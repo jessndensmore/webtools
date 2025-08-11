@@ -6,3 +6,5 @@ A 'Contact Us' from was added to the 'Contact' page. This form uses single-line 
 A table was added to the 'About' page that details information about four of the major festivals in Texas. It includes festival names, dates, locations, and websites.
 
 A 'Team' page was added. It has team member names, bios, and avatars. The footer was also updated using flexbox.
+
+A'Products' page was added using CSS grid to create multiple product listings across multiple rows and columns.
