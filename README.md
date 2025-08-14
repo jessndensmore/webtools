@@ -14,5 +14,7 @@ The W3.CSS stylesheet was linked to the site and the following changes were made
 *The Contact form was updated using w3-input class for all input sections
 *The table on the 'About' page was updated using w3-table-all to add table formatting to include bordering the table, bordering the cells, and adding color stripes to the table. 
 *A panel component was added on the top of the 'Products' page
-*A card was placed on all products on the 'Products' page
+*A card was placed on all products on the 'Products' page.
 Using the w3.CSS stylesheet was a very user-friendly experience and I thought it made formatting the pages much easier!
+
+An 'ABout' page was added that highlights my information and skills learned in this class.
