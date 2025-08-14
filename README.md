@@ -9,9 +9,9 @@ A 'Team' page was added. It has team member names, bios, and avatars. The footer
 
 A'Products' page was added using CSS grid to create multiple product listings across multiple rows and columns.
 
-The W3.CSS stylesheet was linked to the site and the following changes were made:
--The headers and footers were changed to the W3.css color 'amber'
--The Contact form was updated using w3-input class for all input sections
--The table on the 'About' page was updated using w3-table-all to add table formatting to include bordering the table, bordering the cells, and adding color stripes to the table. 
--A panel component was added on the top of the 'Products' page
--A card was placed on all products on the 'Products' page
+###The W3.CSS stylesheet was linked to the site and the following changes were made:###
+*The headers and footers were changed to the W3.css color 'amber'
+*The Contact form was updated using w3-input class for all input sections
+*The table on the 'About' page was updated using w3-table-all to add table formatting to include bordering the table, bordering the cells, and adding color stripes to the table. 
+*A panel component was added on the top of the 'Products' page
+*A card was placed on all products on the 'Products' page
