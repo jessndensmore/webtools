@@ -1,7 +1,7 @@
 /*Header*/
 
 .logo {
-    position: absolute;
+    position: absolute
 }
 
 /*Team Page*/
@@ -100,25 +100,25 @@
 
 /*Navigation*/
 
-nav {
-    position: fixed;
-}
-
 .topnav {
-    overflow: hidden;
-    background-color: rgb(238, 170, 10);
-    position: fixed;
-    width: 100%;
-}
-
-.topnav {
+    display: flex;
     float: left;
-    display: block;
+    padding: 10px;
     color: #f2f2f2;
     text-align: center;
     text-decoration: none;
     font-size: 17px;
     height: 25px;
+    overflow: hidden;
+    background-color: rgb(238, 170, 10);
+    position: fixed;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.sign-in {
+    display: flex;
+    margin-left: auto;
 }
 
 /*Main*/
@@ -129,7 +129,7 @@ main {
 
 /*Footer*/
 
-.footer {
+footer {
     display: flex;
     flex-basis: 100%;
     gap: 180px;
@@ -183,23 +183,20 @@ footer {
 }
 
 .column-1 {
-    float: left;
     width: 75%;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 10px rgba(238, 170, 10);
 }
 
 .column-2 {
-    float: left;
     width: 50%;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 10px rgba(238, 170, 10);
 }
 
 .column-3 {
-    float: left;
     width: 33.33%;
-   background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 10px rgba(238, 170, 10);
     gap: 20px;
 }

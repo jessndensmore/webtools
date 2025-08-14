@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica Densmore Web Page</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
-    <header>
+    <header class="w3-amber">
         <h1>Home</h1>
         <img src="images/logo-white.png" alt="Woman with glasses and book">
         <nav class="topnav">
@@ -20,6 +21,7 @@
             <a href="about-us.html">About</a>
             <a href="team.html">Team</a>
             <a href="products.html">Products</a>
+            <a class="sign-in" href="#">Sign In</a>
         </nav>
     </header>
 
@@ -92,29 +94,28 @@
         </section>
     </main>
 
-    <footer>
-        <footer class="footer">
-            <div class="footer-column"></div>
+    <footer class="w3-amber">
+        <div class="footer-column"></div>
+        <ul>
+            <li><a href="https://www.dallascollege.edu/pages/default.aspx">Dallas College</a></li>
+            <li><a href="https://chatgpt.com/">ChatGPT</a></li>
+            <li><a href="https://copilot.microsoft.com/chats/k4jRPwGsjz8fM9xic1FMk">Microsoft AI</a></li>
+        </ul>
+        <div class="footer-column"></div>
+        <ul>
+            <li>&copy; 2024</li>
+            <li>Email <a href="mailto:e3869880@student.dcccd.edu">Webmaster</a></li>
+        </ul>
+        <div class="footer-column"></div>
+        <div class="bottomnav">
             <ul>
-                <p><a href="https://www.dallascollege.edu/pages/default.aspx">Dallas College</a></p>
-                <p><a href="https://chatgpt.com/">ChatGPT</a></p>
-                <p><a href="https://copilot.microsoft.com/chats/k4jRPwGsjz8fM9xic1FMk">Microsoft AI</a></p>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
             </ul>
-            <div class="footer-column"></div>
-            <ul>
-                <p>&copy; 2024</p>
-                <p>Email <a href="mailto:e3869880@student.dcccd.edu">Webmaster</a></p>
-            </ul>
-            <div class="footer-column"></div>
-            <div class="bottomnav">
-                <ul>
-                    <p><a class="active" href="index.html">Home</a></p>
-                    <p><a href="contact-us.html">Contact</a></p>
-                    <p><a href="about-us.html">About</a></p>
-                    <p><a href="team.html">Team</a></p>
-                </ul>
-            </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 
 </html>
