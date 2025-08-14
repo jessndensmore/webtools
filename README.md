@@ -17,4 +17,11 @@ The W3.CSS stylesheet was linked to the site and the following changes were made
 *A card was placed on all products on the 'Products' page.
 Using the w3.CSS stylesheet was a very user-friendly experience and I thought it made formatting the pages much easier!
 
-An 'ABout' page was added that highlights my information and skills learned in this class.
+An 'About' page was added that highlights my information and skills learned in this class. It used the W3 Schools CV template. The changes I made were numurous but some of them include:
+*Updating the picture to an AI portait of myself.
+*Removing all contact information
+*updating Work Experience to reflect my schooling at Dallas College.
+*Updating my education to reflect that I am a student of Dallas College. 
+*Updating the color scheme to match the rest of my site.
+*Adding my header and footer.
+*Adding my stylesheets and favicon.
