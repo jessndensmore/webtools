@@ -25,3 +25,4 @@ An 'About' page was added that highlights my information and skills learned in t
 *Updating the color scheme to match the rest of my site.
 *Adding my header and footer.
 *Adding my stylesheets and favicon.
+I feel that using the template made the coding of the page much better and easier.
