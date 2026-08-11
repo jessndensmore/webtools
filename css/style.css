@@ -1,85 +1,522 @@
-header {
-    background-color: rgb(238, 170, 10, 0.893);
-    font-family: "Lucida Handwriting", cursive;
-    text-align: center;
-    font-size: 20px;
+/* ========================================
+   COLOR PALETTE
+   ======================================== */
+
+:root {
+    --cream: #fffaf3;
+    --cream-dark: #f4eadc;
+    --gold: #d99024;
+    --gold-light: #f0b44d;
+    --terracotta: #b85c38;
+    --brown: #3b2920;
+    --brown-light: #65483a;
+    --text: #302923;
+    --muted: #756960;
+    --white: #ffffff;
 }
 
-nav {
-    font-size: 19px;
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+
+* {
+    box-sizing: border-box;
 }
 
-h2 {
-    background-color: rgb(255, 255, 255);
-    font-family: "Lucida Handwriting", cursive;
-    text-align: left;
-    font-size: 18px;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-    font-family: "Times New Roman", serif;
-    text-align: left;
-    font-size: 15px;
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
-footer {
-    background-color: rgb(238, 170, 10);
-    font-family: "Lucida Handwriting", cursive;
+
+/* ========================================
+   HEADER
+   ======================================== */
+
+header {
+    background-color: #f2ad05;
     text-align: center;
-    font-size: 14px;
+    padding: 18px 20px 12px;
 }
 
-a {
-  color: black;
-}
-a:link {
-    color: black;
-}
-a:visited {
-    color: grey;
-}
-a:hover {
-    color: rgb(172, 102, 5);
+header h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.8rem;
+    color: #3b261d;
 }
 
-ul.no-bullets {
-  list-style-type: none;
+header p {
+    margin: 8px 0 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #4a2c1f;
 }
+
+header img {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+nav {
+    background-color: #3b261d;
+    margin: 0 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 0 3px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #8b4f13;
+}
+
+nav a.active {
+    background-color: #ffffff;
+    color: #3b261d;
+}
+
+.topnav a:visited {
+    color: var(--white);
+}
+
+.topnav a:hover,
+.topnav a:focus-visible {
+    background-color: var(--gold-light);
+    color: var(--brown);
+}
+
+.topnav a:focus-visible {
+    outline: 3px solid var(--white);
+    outline-offset: 2px;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    background-color: #3b261d;
+    padding: 8px;
+    width: 100%;
+}
+
+.topnav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 18px;
+}
+
+.topnav a:hover {
+    background-color: #6b4636;
+    color: #ffffff;
+}
+
+.topnav a.active {
+    background-color: #f2ad05;
+    color: #3b261d;
+}
+
+
+/* ========================================
+   MAIN CONTENT
+   ======================================== */
 
 main {
-    text-align: left;
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    padding: 3.5rem 0;
 }
 
-/*success.html*/
+section {
+    margin-bottom: 4rem;
+}
 
-#success {
+section:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin: 0 0 1.5rem;
+    padding-bottom: 0.6rem;
+    color: var(--brown);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    border-bottom: 3px solid var(--gold);
+}
+
+p {
+    max-width: 70ch;
+    margin: 0 0 1.4rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+figure {
+    margin: 2rem auto;
     text-align: center;
 }
 
-/*about-us.html*/
-
-#about table, th, td {
-    width: 60vw;
-    padding: 10px;
-    border: 1px solid rgb(172, 102, 5);
-    text-align: left;
-    margin: auto;
-    border-spacing: 2px;
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: var(--white);
+    border: 1px solid #d8cbbd;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(59, 41, 32, 0.14);
 }
 
-#about p {
-    text-align: center;
+figcaption {
+    margin-top: 0.6rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-style: italic;
 }
 
-#about h2 {
-    text-align: center;
+
+/* Individual image sizes */
+
+.texas-flag {
+    width: 100%;
 }
 
-/*contact-us.html*/
+.girl-dragon {
+    width: min(450px, 100%);
+}
 
-form {
-    margin: auto;
+.coding {
+    width: min(450px, 100%);
+}
+
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: var(--terracotta);
+}
+
+a:hover {
+    color: var(--brown);
+}
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    padding: 3rem 5%;
+    background-color: var(--brown) !important;
+    color: var(--white) !important;
+}
+
+footer .footer-column {
+    flex: 1 1 180px;
+    max-width: 250px;
+}
+
+footer h2 {
+    margin-bottom: 0.75rem;
+    padding: 0;
+    color: var(--gold-light) !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-bottom: none;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer a,
+footer a:visited {
+    color: var(--white) !important;
+}
+
+footer a:hover,
+footer a:focus-visible {
+    color: var(--gold-light) !important;
+}
+
+.footer-bottom {
+    flex-basis: 100%;
+    padding-top: 1rem;
     text-align: center;
-    width: 65vw;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.footer-bottom p {
+    max-width: none;
+    margin: 0;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    header {
+        padding-top: 1rem;
+    }
+
+    header h1 {
+        font-size: 2.15rem;
+    }
+
+    .topnav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .topnav a {
+        text-align: center;
+    }
+
+    main {
+        width: 90%;
+        padding: 2.5rem 0;
+    }
+
+    h2 {
+        font-size: 1.65rem;
+    }
+
+    section {
+        margin-bottom: 3.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-column {
+        width: 100%;
+        max-width: 400px;
+    }
+
+        .background-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+        .background-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .background-image {
+        margin-top: 0.5rem;
+    }
+
+    .inspiration-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .inspiration-image {
+        order: 1;
+    }
+
+    .inspiration-text {
+        order: 2;
+    }
+}
+
+.tagline {
+    margin: 0.35rem auto 0;
+    color: var(--brown-light);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+/* ========================================
+   BACKGROUND SECTION
+   ======================================== */
+
+.background-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.background-text p:last-child {
+    margin-bottom: 0;
+}
+
+.background-image {
+    margin: 0;
+}
+
+.background-image img {
+    width: 100%;
+}
+
+/* ========================================
+   INSPIRATION SECTION
+   ======================================== */
+
+.inspiration-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.inspiration-image {
+    margin: 0;
+}
+
+.inspiration-image img {
+    width: 100%;
+}
+
+.inspiration-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==============================
+   WEB DESIGN JOURNEY
+   ============================== */
+
+.web-design-journey {
+    margin-top: 70px;
+}
+
+.web-design-journey > h2 {
+    margin-bottom: 35px;
+}
+
+/* Coding image */
+
+.journey-intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.journey-intro figure {
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+.journey-intro img {
+    width: 100%;
+    display: block;
+}
+
+.journey-intro figcaption {
+    margin-top: 12px;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+/* Three skill cards */
+
+.journey-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 45px 0;
+}
+
+.journey-card {
+    padding: 30px;
+    background-color: #f8f4ed;
+    border: 1px solid #dfd4c5;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.journey-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #8b4f13;
+}
+
+.journey-card p {
+    margin-bottom: 0;
+}
+
+/* Story */
+
+.journey-story {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.journey-story p {
+    margin-bottom: 25px;
+}
+
+/* Final goal */
+
+.journey-goal {
+    margin-top: 40px;
+    padding: 30px 35px;
+    background-color: #f8f4ed;
+    border-left: 5px solid #d88912;
+    border-radius: 0 10px 10px 0;
+}
+
+.journey-goal h3 {
+    margin-top: 0;
+    color: #8b4f13;
+}
+
+.journey-goal p {
+    margin-bottom: 0;
 }

@@ -1,208 +1,538 @@
-/*Header*/
+/* =========================================================
+   MODERN WARM - LAYOUT
+   Jessica Densmore
+   ========================================================= */
 
-.logo {
-    position: absolute
-}
 
-/*Team Page*/
+/* =========================================================
+   GLOBAL LAYOUT
+   ========================================================= */
 
-.team {
-    display: flex;
-    gap: 300px;
-    justify-content: center;
-    border: 2px;
-    box-shadow: 5px 5px 10px rgba(238, 170, 10);
-}
-
-/*Images*/
-
-.girl-dragon {
-    max-width: 150px;
-    max-height: 70px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    float: left;
+* {
     box-sizing: border-box;
 }
 
-.coding {
-    max-width: 200px;
-    max-height: 60px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    float: right;
-    box-sizing: border-box;
+html {
+    scroll-behavior: smooth;
 }
 
-.texas-flag {
-    max-width: 200px;
-    max-height: 80px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    float: right;
-    box-sizing: border-box;
-}
-
-.jessica-pic {
-    max-width: 200px;
-    max-height: 375px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-.cheyenne-pic {
-    max-width: 200px;
-    max-height: 375px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-.lindsey-pic {
-    max-width: 200px;
-    max-height: 375px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-.shows {
-    max-width: 500px;
-    max-height: 200px;
-}
-
-.food {
-    max-width: 500px;
-    max-height: 200px;
-}
-
-.shops {
-    max-width: 500px;
-    max-height: 200px;
-}
-
-.food-shows {
-    max-width: 400px;
-    max-height: 200px;
-}
-
-.food-shops {
-    max-width: 400px;
-    max-height: 200px;
-}
-
-/*Navigation*/
-
-.topnav {
-    display: flex;
-    float: left;
-    padding: 10px;
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    height: 25px;
-    overflow: hidden;
-    background-color: rgb(238, 170, 10);
-    position: fixed;
-    width: 100%;
-    padding: 5px 10px;
-}
-
-.sign-in {
-    display: flex;
-    margin-left: auto;
-}
-
-/*Main*/
-
-main {
-    padding-top: 50px;
-}
-
-/*Footer*/
-
-footer {
-    display: flex;
-    flex-basis: 100%;
-    gap: 180px;
-}
-
-/*Products Page*/
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto 1fr auto;
-    gap: 20px;
+body {
+    margin: 0;
     min-height: 100vh;
 }
 
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
 header {
-    grid-column: 1 / -1;
-    background-color: rgb(238, 170, 10);
-    padding: 20px;
+    width: 100%;
     text-align: center;
+    padding: 25px 20px 0;
 }
+
+/* Main site title */
+header h1 {
+    margin: 0 0 8px;
+}
+
+/* Header logo/avatar */
+header > img {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 8px auto 25px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.topnav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    margin: 0;
+    padding: 10px 15px;
+
+    position: static;
+    float: none;
+
+    height: auto;
+    overflow: visible;
+
+    background-color: #3f2a20;
+}
+
+/* Navigation links */
+.topnav a {
+    display: block;
+
+    padding: 12px 18px;
+
+    color: #ffffff;
+    background-color: transparent;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+/* Remove the old white active button */
+.topnav a.active {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+/* Hover */
+.topnav a:hover {
+    color: #3f2a20;
+    background-color: #f2b30d;
+}
+
+/* Keep active page from becoming white */
+.topnav a.active:hover {
+    color: #3f2a20;
+    background-color: #f2b30d;
+}
+
+/* Sign-in link, if used */
+.topnav .sign-in {
+    margin-left: 0;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
 
 main {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
+    width: 100%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 40px 25px 60px;
 }
 
-aside {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+main section {
+    margin-bottom: 70px;
 }
 
-footer {
-    grid-column: 1 / -1;
-    background-color: rgb(238, 170, 10);
-    padding: 20px;
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.girl-dragon {
+    max-width: 500px;
+    max-height: none;
+
+    display: block;
+
+    margin: 20px auto;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    padding: 5px;
+
+    float: none;
+
+    box-shadow: 0 4px 12px rgba(63, 42, 32, 0.12);
+}
+
+.coding {
+    max-width: 550px;
+    max-height: none;
+
+    display: block;
+
+    margin: 20px auto;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    padding: 5px;
+
+    float: none;
+
+    box-shadow: 0 4px 12px rgba(63, 42, 32, 0.12);
+}
+
+.texas-flag {
+    max-width: 450px;
+    max-height: none;
+
+    display: block;
+
+    margin: 20px auto;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    padding: 5px;
+
+    float: none;
+
+    box-shadow: 0 4px 12px rgba(63, 42, 32, 0.12);
+}
+
+
+/* Team member images */
+
+.jessica-pic,
+.cheyenne-pic,
+.lindsey-pic {
+    max-width: 250px;
+    max-height: 375px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    padding: 5px;
+
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Renaissance festival images */
+
+.shows,
+.food,
+.shops {
+    max-width: 500px;
+    max-height: 300px;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.food-shows,
+.food-shops {
+    max-width: 400px;
+    max-height: 300px;
+
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   TEAM PAGE
+   ========================================================= */
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 40px;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    border: none;
+
+    box-shadow: none;
+}
+
+.team-member {
+    flex: 1;
+    max-width: 350px;
+
     text-align: center;
 }
+
+.team-member figure {
+    margin: 20px 0;
+}
+
+.team-member figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 100px;
+
+    padding: 40px 30px 25px;
+
+    flex-wrap: wrap;
+}
+
+/* Footer columns */
+.footer-column {
+    flex: 1;
+    min-width: 180px;
+    max-width: 300px;
+}
+
+/* Footer lists */
+footer ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   BOTTOM NAVIGATION
+   ========================================================= */
+
+.bottomnav {
+    text-align: center;
+}
+
+.bottomnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottomnav li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   PRODUCTS PAGE
+   ========================================================= */
+
+.grid-container {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    grid-template-rows: auto 1fr;
+
+    gap: 20px;
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 30px 25px;
+}
+
+.grid-container > header {
+    grid-column: 1 / -1;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.grid-container > main {
+    max-width: none;
+
+    margin: 0;
+
+    padding: 20px;
+}
+
+.grid-container > aside {
+    padding: 20px;
+}
+
+
+/* Product grid */
 
 .product-grid-container {
     display: grid;
+
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 20px;
+
+    gap: 20px;
+
+    width: 100%;
 }
 
 .product-grid-item {
-    border: 1px solid #ccc;
     padding: 20px;
+
+    text-align: center;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+}
+
+
+/* Product columns */
+
+.column-1,
+.column-2,
+.column-3 {
+    background-color: #ffffff;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 12px rgba(63, 42, 32, 0.12);
+
     text-align: center;
 }
 
 .column-1 {
     width: 75%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 10px rgba(238, 170, 10);
 }
 
 .column-2 {
     width: 50%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 10px rgba(238, 170, 10);
 }
 
 .column-3 {
     width: 33.33%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 10px rgba(238, 170, 10);
-    gap: 20px;
 }
 
-.row:after {
+
+/* Clear floats used by older product markup */
+
+.row::after {
     content: "";
     display: table;
     clear: both;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container > header,
+    .grid-container > main,
+    .grid-container > aside {
+        grid-column: 1;
+    }
+
+    .product-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .column-1,
+    .column-2,
+    .column-3 {
+        width: 100%;
+    }
+
+    footer {
+        gap: 50px;
+    }
+}
+
+
+/* =========================================================
+   SMALL SCREENS
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding-top: 20px;
+    }
+
+    header > img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .topnav {
+        flex-wrap: wrap;
+        gap: 4px;
+        padding: 8px;
+    }
+
+    .topnav a {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+
+    main {
+        padding: 30px 18px 45px;
+    }
+
+    main section {
+        margin-bottom: 50px;
+    }
+
+    .product-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 30px;
+
+        padding: 35px 20px 25px;
+    }
+
+    .footer-column {
+        width: 100%;
+        max-width: 100%;
+    }
 }
