@@ -1181,3 +1181,138 @@ footer .footer-navigation a {
     }
 
 }
+
+/* =========================================================
+   TABLET POLISH
+   601px - 900px
+   ========================================================= */
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    /* -------------------------
+       MAIN CONTENT
+       ------------------------- */
+
+    main {
+        width: 94%;
+        max-width: 850px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    /* -------------------------
+       BACKGROUND SECTION
+       ------------------------- */
+
+    .background-grid {
+        grid-template-columns: 1.4fr 0.8fr;
+        gap: 2.5rem;
+    }
+
+    .background-image img {
+        width: 100%;
+    }
+
+
+    /* -------------------------
+       INSPIRATION SECTION
+       ------------------------- */
+
+    .inspiration-grid {
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 2.5rem;
+    }
+
+    .inspiration-image img {
+        width: 100%;
+    }
+
+
+    /* -------------------------
+       WEB DESIGN JOURNEY
+       ------------------------- */
+
+    .journey-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 35px 0;
+    }
+
+    .journey-card {
+        padding: 28px;
+    }
+
+
+    /* -------------------------
+       IMAGES
+       ------------------------- */
+
+    .texas-flag,
+    .coding,
+    .girl-dragon {
+        max-width: 50%;
+    }
+
+
+    /* -------------------------
+       JOURNEY STORY
+       ------------------------- */
+
+    .journey-story {
+        max-width: 800px;
+    }
+
+
+    /* -------------------------
+       JOURNEY GOAL
+       ------------------------- */
+
+    .journey-goal {
+        padding: 28px 30px;
+    }
+
+
+    /* -------------------------
+       FOOTER
+       ------------------------- */
+
+    footer .footer-content {
+        gap: 3rem;
+    }
+
+    /* Tablet typography adjustment */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    main {
+        font-size: 16px;
+    }
+
+    main p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .journey-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .journey-card h3 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    footer h3 {
+        font-size: 1.1rem;
+    }
+}
+}
+
