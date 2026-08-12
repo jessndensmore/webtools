@@ -548,3 +548,191 @@ footer .footer-navigation a {
         max-width: 100%;
     }
 }
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* ---------- TABLETS ---------- */
+
+@media screen and (max-width: 900px) {
+
+    /* Header */
+    header {
+        padding: 18px 15px 0 15px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header > img {
+        max-width: 120px;
+        margin: 10px auto 10px auto;
+    }
+
+    /* Navigation */
+    .topnav {
+        gap: 5px;
+    }
+
+    .topnav a {
+        padding: 9px 13px;
+        font-size: 16px;
+    }
+
+    /* Main content */
+    main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /* Images */
+    .texas-flag,
+    .coding,
+    .girl-dragon {
+        max-width: 40%;
+    }
+
+    /* Footer */
+    .footer-container {
+        gap: 25px;
+    }
+}
+
+
+/* ---------- PHONES ---------- */
+
+@media screen and (max-width: 600px) {
+
+    /* Header */
+    header {
+        padding: 15px 10px 0 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .tagline {
+        font-size: 15px;
+        margin: 8px 0;
+    }
+
+    header > img {
+        max-width: 100px;
+        margin: 8px auto 10px auto;
+    }
+
+
+    /* Navigation */
+    .topnav {
+        flex-direction: column;
+        gap: 0;
+
+        width: 100%;
+
+        padding: 5px 0;
+    }
+
+    .topnav a {
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 10px;
+
+        font-size: 16px;
+
+        text-align: center;
+    }
+
+
+    /* Main content */
+    main {
+        padding: 25px 18px;
+    }
+
+    /* Section headings */
+    h2 {
+        font-size: 25px;
+    }
+
+
+    /* Floating images become normal images */
+    .texas-flag,
+    .coding,
+    .girl-dragon {
+        float: none;
+
+        display: block;
+
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        margin: 15px auto;
+    }
+
+
+    /* Make sure other images never overflow */
+    main img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* Footer */
+    footer {
+        margin-top: 40px;
+        padding: 30px 20px 15px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        width: 100%;
+    }
+
+    .footer-navigation {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        margin-top: 25px;
+    }
+}
+
+
+/* ---------- SMALL PHONES ---------- */
+
+@media screen and (max-width: 400px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    header > img {
+        max-width: 90px;
+    }
+
+    main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .topnav a {
+        font-size: 15px;
+        padding: 9px;
+    }
+}
