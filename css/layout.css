@@ -1434,6 +1434,18 @@ footer .footer-navigation a {
     background: var(--brown);
 }
 
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #b86f00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
 .js-visual {
     background: var(--gold);
     color: var(--brown);
