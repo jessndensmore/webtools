@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta name="author" content="Jessica Densmore">
-    <meta name="description" content="Selected web design, JavaScript, Java, and visual design projects by Jessica Densmore.">
+    <meta name="description"
+        content="Selected web design, JavaScript, Java, and visual design projects by Jessica Densmore.">
 </head>
 
 <body>
@@ -73,6 +74,10 @@
                             The project uses user interaction to change the displayed image.
                         </p>
                         <p class="project-tools"><strong>Skills:</strong> JavaScript • Events • Images</p>
+                        <a href="https://jessndensmore.github.io/beginning-web-programming/gallery.html"
+                            class="project-link">
+                            View Project →
+                        </a>
                     </div>
                 </article>
 
@@ -85,6 +90,10 @@
                             calculations, and interactive order totals.
                         </p>
                         <p class="project-tools"><strong>Skills:</strong> Forms • Input • Calculations</p>
+                        <a href="https://jessndensmore.github.io/beginning-web-programming/orderform.html"
+                            class="project-link">
+                            View Project →
+                        </a>
                     </div>
                 </article>
 
@@ -97,6 +106,10 @@
                             to determine whether the player's guess is correct.
                         </p>
                         <p class="project-tools"><strong>Skills:</strong> Logic • Input • Interaction</p>
+                        <a href="https://jessndensmore.github.io/beginning-web-programming/game.html"
+                            class="project-link">
+                            View Project →
+                        </a>
                     </div>
                 </article>
             </div>
@@ -116,7 +129,11 @@
                             encounter randomized events, manage health and gold, and search
                             for the Crown of Eldoria.
                         </p>
-                        <p class="project-tools"><strong>Skills:</strong> Java • Methods • Loops • Arrays • Game Logic</p>
+                        <p class="project-tools"><strong>Skills:</strong> Java • Methods • Loops • Arrays • Game Logic
+                        </p>
+                        <p class="source-note">
+                            Source code available upon request.
+                        </p>
                     </div>
                 </article>
 
@@ -129,6 +146,9 @@
                             values, and mathematical calculations to generate mission statistics.
                         </p>
                         <p class="project-tools"><strong>Skills:</strong> Java • Randomization • Math • Input</p>
+                        <p class="source-note">
+                            Source code available upon request.
+                        </p>
                     </div>
                 </article>
             </div>
@@ -147,6 +167,8 @@
                     <div>
                         <h3>Hawaii Postcard</h3>
                         <p>Travel-themed photo composition and typography.</p>
+                        <a href="#" class="project-link" data-project="0">View Project
+                            →</a>
                     </div>
                 </article>
 
@@ -155,6 +177,7 @@
                     <div>
                         <h3>Horror Flyer</h3>
                         <p>Promotional composition using imagery, effects, and typography.</p>
+                        <a href="#" class="project-link" data-project="1">View Project →</a>
                     </div>
                 </article>
 
@@ -163,6 +186,7 @@
                     <div>
                         <h3>Magazine Cover</h3>
                         <p>Editorial layout focused on hierarchy and typography.</p>
+                        <a href="#" class="project-link" data-project="2">View Project →</a>
                     </div>
                 </article>
 
@@ -171,6 +195,7 @@
                     <div>
                         <h3>Citrus Lane Farms</h3>
                         <p>Clean promotional and brand-style graphic design.</p>
+                        <a href="#" class="project-link" data-project="3">View Project →</a>
                     </div>
                 </article>
 
@@ -179,10 +204,57 @@
                     <div>
                         <h3>History 301</h3>
                         <p>Educational/event graphic combining imagery and information.</p>
+                        <a href="#" class="project-link" data-project="4">View Project →</a>
                     </div>
                 </article>
             </div>
         </section>
+
+        <section class="source-code-section">
+            <h2>Source Code</h2>
+
+            <p>
+                Source code for selected projects is available upon request.
+            </p>
+        </section>
+
+        <!-- Visual Design Lightbox -->
+        <div class="lightbox" id="project-lightbox">
+
+            <div class="lightbox-content">
+
+                <button class="lightbox-close" id="lightbox-close" aria-label="Close">
+                    &times;
+                </button>
+
+                <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous project">
+                    &#10094;
+                </button>
+
+                <div class="lightbox-project">
+
+                    <div class="lightbox-header">
+                        <h2 id="lightbox-title">Hawaii Postcard</h2>
+                        <p id="lightbox-description">
+                            Travel-themed photo composition and typography.
+                        </p>
+                    </div>
+
+                    <img id="lightbox-image" src="images/projects/hawaii-postcard.jpg" alt="Hawaii Postcard">
+
+                    <div class="lightbox-counter" id="lightbox-counter">
+                        1 / 5
+                    </div>
+
+                </div>
+
+                <button class="lightbox-next" id="lightbox-next" aria-label="Next project">
+                    &#10095;
+                </button>
+
+            </div>
+
+        </div>
 
     </main>
 
@@ -222,6 +294,9 @@
             <p>&copy; 2026 Jessica Densmore</p>
         </div>
     </footer>
+
+    <script src="js/projects.js"></script>
+
 
 </body>
 

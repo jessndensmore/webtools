@@ -1446,6 +1446,38 @@ footer .footer-navigation a {
     text-decoration: underline;
 }
 
+/* ========================================
+   SOURCE CODE NOTE
+   ======================================== */
+
+.source-note {
+    margin-top: 12px;
+    color: #7a6254;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.source-code-section {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #f7efe3;
+    border: 1px solid #d6b98c;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(74, 48, 32, 0.12);
+}
+
+.source-code-section h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.source-code-section p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
 .js-visual {
     background: var(--gold);
     color: var(--brown);
@@ -1540,5 +1572,187 @@ footer .footer-navigation a {
 
     .project-card-visual {
         min-height: 120px;
+    }
+}
+
+/* ==============================
+   Visual Design Lightbox
+   ============================== */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(35, 25, 20, 0.88);
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.lightbox-content {
+    position: relative;
+    width: min(900px, 90vw);
+    max-height: 90vh;
+    background: #f5eadb;
+    border: 1px solid #d99a3d;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-project {
+    width: 100%;
+    text-align: center;
+}
+
+.lightbox-header {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.lightbox-header h2 {
+    margin: 0 0 8px;
+    color: #3d281f;
+    text-align: center;
+}
+
+.lightbox-header p {
+    margin: 0;
+    color: #66564c;
+    text-align: center;
+}
+
+#lightbox-image {
+    display: block;
+    max-width: 100%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.lightbox-counter {
+    margin-top: 12px;
+    color: #66564c;
+    font-size: 0.9rem;
+}
+
+/* Close button */
+
+.lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #3d281f;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.lightbox-close:hover {
+    background: #d98a00;
+}
+
+/* Previous / Next buttons */
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #f5eadb;
+    color: #3d281f;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.lightbox-prev {
+    left: -20px;
+}
+
+.lightbox-next {
+    right: -20px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: #d98a00;
+    color: #ffffff;
+}
+
+/* Prevent scrolling while lightbox is open */
+
+body.lightbox-open {
+    overflow: hidden;
+}
+
+
+/* ==============================
+   Mobile Lightbox
+   ============================== */
+
+@media (max-width: 700px) {
+
+    .lightbox {
+        padding: 15px;
+    }
+
+    .lightbox-content {
+        width: 100%;
+        max-height: 92vh;
+        padding: 20px 15px;
+    }
+
+    #lightbox-image {
+        max-height: 65vh;
+    }
+
+    .lightbox-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .lightbox-header p {
+        font-size: 0.9rem;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+
+    .lightbox-prev {
+        left: 5px;
+    }
+
+    .lightbox-next {
+        right: 5px;
+    }
+
+    .lightbox-close {
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+        top: 8px;
+        right: 8px;
     }
 }
