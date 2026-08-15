@@ -1764,54 +1764,154 @@ body.lightbox-open {
    HOMEPAGE REDESIGN
    ========================================================= */
 
-/* Homepage sections */
-.home-section {
+
+/* =========================================================
+   GENERAL HOMEPAGE SECTIONS
+   ========================================================= */
+
+.hero-section,
+.about-preview,
+.featured-work,
+.beyond-code,
+.whats-next,
+.contact-cta {
     margin-bottom: 5rem;
 }
 
-.home-section > h2 {
-    margin-bottom: 1.5rem;
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero-section {
+    text-align: center;
 }
 
-/* Intro / Hero */
-.home-intro {
-    max-width: 850px;
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.home-intro p {
-    max-width: 70ch;
+.hero-content h2 {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* About section */
-.about-content {
+.hero-content p {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-intro {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.hero-buttons .button,
+.contact-cta .button,
+.featured-work-link .button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    background-color: #d98216;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #d98216;
+    transition: all 0.2s ease;
+}
+
+.hero-buttons .button:hover,
+.contact-cta .button:hover,
+.featured-work-link .button:hover {
+    background-color: #3f2a20;
+    border-color: #3f2a20;
+    color: white;
+}
+
+
+/* Secondary button */
+
+.hero-buttons .secondary-button {
+    background-color: transparent;
+    color: #a94f32;
+    border-color: #a94f32;
+}
+
+.hero-buttons .secondary-button:hover {
+    background-color: #a94f32;
+    color: white;
+}
+
+
+/* =========================================================
+   ABOUT PREVIEW
+   ========================================================= */
+
+.about-preview-grid {
     display: grid;
-    grid-template-columns: 1.4fr 0.8fr;
+    grid-template-columns: 1.2fr 0.8fr;
     gap: 3rem;
     align-items: center;
 }
 
-.about-image {
-    margin: 0;
+.about-preview-text p {
+    max-width: 65ch;
 }
 
-.about-image img {
+.about-preview-image {
+    margin: 0;
+    text-align: center;
+}
+
+.about-preview-image img {
     display: block;
     width: 100%;
-    max-width: 500px;
+    max-width: 380px;
     margin: 0 auto;
     border: 5px solid white;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(63, 42, 32, 0.12);
 }
 
-/* Featured projects */
-.home-project-grid {
+.about-preview-image figcaption {
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
+
+/* =========================================================
+   FEATURED WORK
+   ========================================================= */
+
+.featured-work .section-intro {
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+
+.featured-projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
-.home-project-card {
+.featured-project {
     background: var(--cream-dark);
     border: 1px solid #dfd3c4;
     border-radius: 12px;
@@ -1819,104 +1919,161 @@ body.lightbox-open {
     box-shadow: 0 4px 12px rgba(63, 42, 32, 0.08);
 }
 
-.home-project-card h3 {
+.featured-project h3 {
     margin-top: 0;
-    color: var(--brown);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.4rem;
 }
 
-.home-project-card p {
-    color: var(--muted);
+.featured-project p {
     line-height: 1.6;
 }
 
-.home-project-card .project-link {
-    margin-top: 1rem;
+.featured-work-link {
+    text-align: center;
+    margin-top: 2rem;
 }
 
-/* Beyond the Code */
-.beyond-code {
+
+/* Project links */
+
+.featured-project .project-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #a94f32;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #d98216;
+    padding-bottom: 2px;
+    transition: all 0.2s ease;
+}
+
+.featured-project .project-link:hover {
+    color: #3f2a20;
+    border-bottom-color: #3f2a20;
+}
+
+
+/* =========================================================
+   BEYOND THE CODE
+   ========================================================= */
+
+.beyond-code-grid {
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-columns: 0.85fr 1.15fr;
     gap: 3rem;
     align-items: center;
+}
+
+.beyond-code-image {
+    margin: 0;
+    text-align: center;
 }
 
 .beyond-code-image img {
     display: block;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
     border: 5px solid white;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(63, 42, 32, 0.12);
 }
 
+.beyond-code-image figcaption {
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
 .beyond-code-text p {
     max-width: 65ch;
 }
 
-/* What's Next */
-.whats-next {
-    max-width: 850px;
+.personality-note {
+    font-style: italic;
 }
 
-/* Contact CTA */
-.home-contact {
+
+/* =========================================================
+   WHAT'S NEXT
+   ========================================================= */
+
+.whats-next-content {
+    max-width: 800px;
+}
+
+.whats-next-content p {
+    max-width: 70ch;
+}
+
+
+/* =========================================================
+   CONTACT CTA
+   ========================================================= */
+
+.contact-cta {
     text-align: center;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.home-contact p {
+.contact-cta h2 {
+    text-align: center;
+}
+
+.contact-cta p {
     margin-bottom: 1.5rem;
 }
 
 
 /* =========================================================
-   HOMEPAGE RESPONSIVE
+   RESPONSIVE
    ========================================================= */
 
 @media (max-width: 900px) {
 
-    .about-content,
-    .beyond-code {
+    .about-preview-grid,
+    .beyond-code-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .about-image {
-        order: -1;
-    }
-
-    .home-project-grid {
+    .featured-projects {
         grid-template-columns: 1fr;
     }
 
-    .home-project-card {
-        padding: 1.5rem;
+    .about-preview-image {
+        order: -1;
     }
 }
 
+
 @media (max-width: 600px) {
 
-    .home-section {
+    .hero-section,
+    .about-preview,
+    .featured-work,
+    .beyond-code,
+    .whats-next,
+    .contact-cta {
         margin-bottom: 3.5rem;
     }
 
-    .home-project-grid {
-        gap: 1.25rem;
+    .hero-buttons {
+        flex-direction: column;
     }
 
-    .about-content,
-    .beyond-code {
+    .hero-buttons .button {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .about-preview-grid,
+    .beyond-code-grid {
         gap: 1.5rem;
     }
 
-    .about-image img,
-    .beyond-code-image img {
-        width: 100%;
+    .featured-projects {
+        gap: 1.25rem;
     }
 }
