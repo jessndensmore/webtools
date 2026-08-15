@@ -1759,3 +1759,164 @@ body.lightbox-open {
         right: 8px;
     }
 }
+
+/* =========================================================
+   HOMEPAGE REDESIGN
+   ========================================================= */
+
+/* Homepage sections */
+.home-section {
+    margin-bottom: 5rem;
+}
+
+.home-section > h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* Intro / Hero */
+.home-intro {
+    max-width: 850px;
+}
+
+.home-intro p {
+    max-width: 70ch;
+}
+
+/* About section */
+.about-content {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-image {
+    margin: 0;
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 5px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(63, 42, 32, 0.12);
+}
+
+/* Featured projects */
+.home-project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.home-project-card {
+    background: var(--cream-dark);
+    border: 1px solid #dfd3c4;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(63, 42, 32, 0.08);
+}
+
+.home-project-card h3 {
+    margin-top: 0;
+    color: var(--brown);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4rem;
+}
+
+.home-project-card p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.home-project-card .project-link {
+    margin-top: 1rem;
+}
+
+/* Beyond the Code */
+.beyond-code {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.beyond-code-image img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 5px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(63, 42, 32, 0.12);
+}
+
+.beyond-code-text p {
+    max-width: 65ch;
+}
+
+/* What's Next */
+.whats-next {
+    max-width: 850px;
+}
+
+/* Contact CTA */
+.home-contact {
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-contact p {
+    margin-bottom: 1.5rem;
+}
+
+
+/* =========================================================
+   HOMEPAGE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .about-content,
+    .beyond-code {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    .home-project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-project-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .home-section {
+        margin-bottom: 3.5rem;
+    }
+
+    .home-project-grid {
+        gap: 1.25rem;
+    }
+
+    .about-content,
+    .beyond-code {
+        gap: 1.5rem;
+    }
+
+    .about-image img,
+    .beyond-code-image img {
+        width: 100%;
+    }
+}
